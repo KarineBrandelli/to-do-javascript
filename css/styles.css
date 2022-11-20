@@ -52,6 +52,28 @@ h1 {
 .todo-list {
   background-color: hsl(235, 24%, 19%);
   margin-top: 1.5rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+label {
+  border-bottom: 1px solid hsl(234, 11%, 52%);
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1.25rem;
 }
 
 
