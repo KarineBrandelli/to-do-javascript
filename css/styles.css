@@ -127,8 +127,32 @@ li:hover,
   text-decoration: line-through;
 }
 
+.ul-div {
+  background-color: hsl(235, 24%, 19%);
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+}
 
 
+@media only screen and (max-width: 2560px) {
+  .ul-div {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 595px) {
+  .ul-div {
+    display: flex;
+  }
+
+  .ul-footer {
+    display: none;
+  }
+}
 
 
 
