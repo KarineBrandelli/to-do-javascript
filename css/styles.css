@@ -85,7 +85,8 @@ ul {
 
 li,
 .clear,
-.fa-solid {
+.fa-solid,
+.fa-regular {
   cursor: pointer;
 }
 
@@ -102,6 +103,28 @@ li:hover,
 .fa-plus {
   margin-left: -1.75rem;
 }
+
+.todo-task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
