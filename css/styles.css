@@ -94,6 +94,15 @@ li:hover,
   color:hsl(234, 11%, 52%);
 }
 
+.new-item {
+  display: flex;
+  align-items: center;
+}
+
+.fa-plus {
+  margin-left: -1.75rem;
+}
+
 
 
 /*
