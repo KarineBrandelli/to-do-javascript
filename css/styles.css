@@ -45,7 +45,7 @@ h1 {
   font-size: 2.75rem;
 }
 
-.fa-sun {
+.theme-switch {
   padding-right: .7rem;
 }
 
@@ -119,11 +119,11 @@ li:hover,
 }
 
 .checked-icon {
-  color: rgb(176, 118, 194);
+  color: hsl(234, 11%, 52%);
 }
 
 .checked-text {
-  color: rgb(176, 118, 194);
+  color: hsl(234, 11%, 52%);
   text-decoration: line-through;
 }
 
