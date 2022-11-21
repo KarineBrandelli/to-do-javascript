@@ -62,9 +62,12 @@ h1 {
   flex-direction: column;
 }
 
-label {
+.list-items {
   border-bottom: 1px solid hsl(234, 11%, 52%);
   padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
@@ -78,6 +81,17 @@ ul {
   display: flex;
   list-style-type: none;
   gap: 1.25rem;
+}
+
+li,
+.clear,
+.fa-solid {
+  cursor: pointer;
+}
+
+li:hover,
+.clear:hover {
+  color:hsl(234, 11%, 52%);
 }
 
 
