@@ -46,7 +46,8 @@ h1 {
   color: hsl(0, 0%, 98%);
 }
 
-.fa-sun {
+.fa-sun,
+.fa-moon {
   font-size: 1.75rem;
   color: hsl(0, 0%, 98%);;
 }
