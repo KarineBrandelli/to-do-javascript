@@ -45,6 +45,10 @@ h1 {
   font-size: 2.75rem;
 }
 
+.fa-sun {
+  padding-right: .7rem;
+}
+
 .new-content {
   background-color: hsl(235, 24%, 19%);
   padding: 1rem;
