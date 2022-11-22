@@ -24,6 +24,7 @@ body {
 .main-center {
   display: flex;
   justify-content: center;
+
   margin: -15rem 1rem 1rem 1rem;
 }
 
@@ -36,61 +37,69 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   margin-bottom: 2rem;
+}
+
+h1,
+.fa-sun,
+.fa-moon {
+  color: hsl(0, 0%, 98%);
 }
 
 h1 {
   letter-spacing: 1rem;
   font-size: 2.75rem;
-  color: hsl(0, 0%, 98%);
 }
 
 .fa-sun,
 .fa-moon {
   font-size: 1.75rem;
-  color: hsl(0, 0%, 98%);;
 }
 
-.theme-switch {
-  padding-right: .7rem;
+.new-content,
+.todo-list,
+.ul-div {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: .5rem;
 }
 
 .new-content {
-  background-color: hsl(235, 24%, 19%);
-  padding: 1rem;
   width: 100%;
   border: none;
-  border-radius: .5rem;
-  outline: none;
+  outline: none;  
+  padding: 1rem;
 }
 
 .todo-list {
-  background-color: hsl(235, 24%, 19%);
-  margin-top: 1.5rem;
-  border-radius: .5rem;
   display: flex;
   flex-direction: column;
+
+  margin-top: 1.5rem;
 }
 
 .list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   border-bottom: 1px solid hsl(234, 11%, 52%);
   padding: 1.5rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   padding: 1.5rem 1rem;
 }
 
 ul {
   display: flex;
-  list-style-type: none;
   gap: 1.25rem;
+
+  list-style-type: none;
 }
 
 li,
@@ -133,11 +142,9 @@ li:hover,
   text-decoration: line-through;
 }
 
-.ul-div {
-  background-color: hsl(235, 24%, 19%);
+.ul-div {  
   margin-top: 1.5rem;
   padding: 1rem;
-  border-radius: .5rem;
   display: flex;
   justify-content: center;
 }
@@ -172,7 +179,7 @@ li:hover,
     background-position: center;
   
     max-width: 100%;
-    height: 35%;
+    padding: 10rem 0;
   }
 
   .todo-list,
@@ -183,7 +190,7 @@ li:hover,
 
   li:hover,
   .clear:hover {
-  color:hsl(235, 8%, 72%);
+    color:hsl(235, 8%, 72%);
   }
 }
 
