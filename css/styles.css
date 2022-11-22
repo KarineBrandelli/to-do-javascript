@@ -7,16 +7,9 @@
 
 body {
   min-height: 100vh;
-  background-color: hsl(235, 21%, 11%);
-  color: hsl(0, 0%, 98%);
 }
 
 .header-img {
-  background: url('../assets/bg-desktop-dark.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
   max-width: 100%;
   padding: 10rem 0;
 }
@@ -35,8 +28,8 @@ body {
 
 .todo-title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   
   margin-bottom: 2rem;
 }
@@ -60,7 +53,6 @@ h1 {
 .new-content,
 .todo-list,
 .ul-div {
-  background-color: hsl(235, 24%, 19%);
   border-radius: .5rem;
 }
 
@@ -83,8 +75,8 @@ h1 {
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 1px solid hsl(234, 11%, 52%);
   padding: 1.5rem 1rem;
+  border-bottom: 1px solid hsl(234, 11%, 52%);
 }
 
 footer {
@@ -107,11 +99,6 @@ li,
 .fa-solid,
 .fa-regular {
   cursor: pointer;
-}
-
-li:hover,
-.clear:hover {
-  color:hsl(234, 11%, 52%);
 }
 
 .new-item {
@@ -142,13 +129,15 @@ li:hover,
   text-decoration: line-through;
 }
 
-.ul-div {  
-  margin-top: 1.5rem;
-  padding: 1rem;
+.ul-div {
   display: flex;
   justify-content: center;
+
+  padding: 1rem;
+  margin-top: 1.5rem;
 }
 
+/* RESPONSIVITY */
 
 @media only screen and (max-width: 2560px) {
   .ul-div {
@@ -166,6 +155,8 @@ li:hover,
   }
 }
 
+/* PREFERS COLOR SCHEME */
+
 @media (prefers-color-scheme: light) {
 	body {
 		background-color: hsl(0, 0%, 98%);
@@ -177,9 +168,6 @@ li:hover,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  
-    max-width: 100%;
-    padding: 10rem 0;
   }
 
   .todo-list,
@@ -194,4 +182,27 @@ li:hover,
   }
 }
 
+@media (prefers-color-scheme: dark) {
+	body {
+    background-color: hsl(235, 21%, 11%);
+    color: hsl(0, 0%, 98%);
+	}
 
+  .header-img {
+    background: url('../assets/bg-desktop-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .todo-list,
+  .new-content,
+  .ul-div {
+    background-color: hsl(235, 24%, 19%);
+  }
+
+  li:hover,
+  .clear:hover {
+    color:hsl(234, 11%, 52%);
+  }
+}
