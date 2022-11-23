@@ -1,19 +1,28 @@
 const input = document.querySelector('.new-content');
 const adicionar = document.querySelector('.fa-plus');
 const lista = document.querySelector('.todo-list');
-const conteudoTarefa = document.querySelector('.task-content');
-
 
 adicionar.addEventListener('click', (event) => {
   event.preventDefault();
 
-  adicionaTarefa(input);
+  criaTarefa(input);
+
+  console.log('clicou')
 });
 
-function adicionaTarefa(input) {
+function criaTarefa(input) {
   const novaTarefa = input.value;
+  const template = `
+  <div class="list-items">
+  <span class="todo-task">
+    <i class="fa-regular fa-circle-check"></i>
+    <p class="task-content">${input.value}</p>
+  </span>
+  <i class="fa-solid fa-xmark"></i>
+  </div>
+  `
 
-  conteudoTarefa.innerHTML = novaTarefa;
-
-  console.log(novaTarefa)
+  lista.innerHTML += template;
+  
+  console.log('adicionou')
 };
