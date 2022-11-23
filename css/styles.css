@@ -52,7 +52,8 @@ h1 {
 
 .new-content,
 .todo-list,
-.ul-div {
+.ul-div,
+footer {
   border-radius: .5rem;
 }
 
@@ -76,7 +77,7 @@ h1 {
   justify-content: space-between;
 
   padding: 1.5rem 1rem;
-  border-bottom: 1px solid hsl(234, 11%, 52%);
+  border-bottom: 2px solid hsl(234, 11%, 52%);
 }
 
 footer {
@@ -84,7 +85,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 
-  padding: 1.5rem 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 ul {
@@ -172,7 +174,8 @@ li,
 
   .todo-list,
   .new-content,
-  .ul-div {
+  .ul-div,
+  footer {
     background-color: hsl(236, 33%, 92%);
   }
 
@@ -197,7 +200,8 @@ li,
 
   .todo-list,
   .new-content,
-  .ul-div {
+  .ul-div,
+  footer {
     background-color: hsl(235, 24%, 19%);
   }
 
