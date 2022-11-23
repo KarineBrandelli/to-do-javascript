@@ -5,5 +5,12 @@ const lista = document.querySelector('.todo-list');
 
 adicionar.addEventListener('click', (event) => {
   event.preventDefault();
-  console.log(input.value)
-})
+
+  adicionaTarefa(input);
+});
+
+function adicionaTarefa(input) {
+  const novaTarefa = input.value;
+
+  console.log(novaTarefa)
+};
