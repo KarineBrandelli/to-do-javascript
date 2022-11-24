@@ -80,7 +80,10 @@ function removeTarefa() {
 };
 
 limpar.addEventListener('click', (e) => {
-  console.log('limpar');
 
   lista.innerHTML = '';
+
+  localStorage.setItem('itens', JSON.stringify([]));
+
+  contadorTarefas.innerHTML = '0';
 });
