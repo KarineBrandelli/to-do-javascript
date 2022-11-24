@@ -53,17 +53,6 @@ function quantidadeTarefas() {
 
 quantidadeTarefas();
 
-
-
-
-
-
-
-
-
-
-
-
 function removeTarefa() {
   const remover = document.querySelectorAll('.fa-xmark');
   console.log(remover);
@@ -74,32 +63,14 @@ function removeTarefa() {
     
     remove.addEventListener('click', (task) => {
       console.log(task.target.parentNode)
-      const teste = task.target.parentNode;
+      const removeElemento = task.target.parentNode;
 
-      teste.remove()
+      removeElemento.remove()
     })
   });
 };
 
 removeTarefa();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // limpar.addEventListener('click', (e) => {
 //   console.log('limpar');
