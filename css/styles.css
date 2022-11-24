@@ -52,7 +52,6 @@ h1 {
 
 .new-content,
 .todo-list,
-.ul-div,
 footer {
   border-radius: .5rem;
 }
@@ -89,14 +88,6 @@ footer {
   margin-top: 1rem;
 }
 
-ul {
-  display: flex;
-  gap: 1.25rem;
-
-  list-style-type: none;
-}
-
-li,
 .clear,
 .fa-solid,
 .fa-regular {
@@ -122,32 +113,6 @@ li,
   font-size: 1.25rem;
 }
 
-.ul-div {
-  display: flex;
-  justify-content: center;
-
-  padding: 1rem;
-  margin-top: 1.5rem;
-}
-
-/* RESPONSIVITY */
-
-@media only screen and (max-width: 2560px) {
-  .ul-div {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 595px) {
-  .ul-div {
-    display: flex;
-  }
-
-  .ul-footer {
-    display: none;
-  }
-}
-
 /* PREFERS COLOR SCHEME */
 
 @media (prefers-color-scheme: light) {
@@ -165,12 +130,10 @@ li,
 
   .todo-list,
   .new-content,
-  .ul-div,
   footer {
     background-color: hsl(236, 33%, 92%);
   }
 
-  li:hover,
   .clear:hover {
     color:hsl(235, 8%, 72%);
   }
@@ -191,12 +154,10 @@ li,
 
   .todo-list,
   .new-content,
-  .ul-div,
   footer {
     background-color: hsl(235, 24%, 19%);
   }
 
-  li:hover,
   .clear:hover {
     color:hsl(234, 11%, 52%);
   }
