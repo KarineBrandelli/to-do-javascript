@@ -1,4 +1,4 @@
-import { input, adicionar, lista, contadorTarefas, tarefaCompletada} from "./dom.js";
+import { input, adicionar, lista, contadorTarefas } from "./dom.js";
 
 const itens = JSON.parse(localStorage.getItem('itens')) || [];
 
@@ -43,5 +43,11 @@ function criaTarefa(input) {
 function quantidadeTarefas() {
   const quantidade = itens.length;
 
-  contadorTarefas.innerHTML = quantidade;
+  if (quantidade < 0) {
+    contadorTarefas.innerHTML = '0';
+  } else {
+    contadorTarefas.innerHTML = quantidade;
+  }
 };
+
+quantidadeTarefas(); 
