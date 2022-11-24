@@ -1,4 +1,4 @@
-import { input, adicionar, lista, contadorTarefas } from "./dom.js";
+import { input, adicionar, lista, contadorTarefas, limpar } from "./dom.js";
 
 const itens = JSON.parse(localStorage.getItem('itens')) || [];
 
@@ -16,7 +16,8 @@ adicionar.addEventListener('click', (event) => {
   criaTarefa(input.value);
 
   let novaTarefa = {
-    "tarefa": input.value
+    "tarefa": input.value,
+    "id": itens.length + 1
   };
 
   itens.push(novaTarefa);
@@ -37,7 +38,7 @@ function criaTarefa(input) {
   </div>
   `
 
-  lista.innerHTML += template;
+  lista.innerHTML += template; 
 };
 
 function quantidadeTarefas() {
@@ -50,4 +51,58 @@ function quantidadeTarefas() {
   }
 };
 
-quantidadeTarefas(); 
+quantidadeTarefas();
+
+
+
+
+
+
+
+
+
+
+
+
+function removeTarefa() {
+  const remover = document.querySelectorAll('.fa-xmark');
+  console.log(remover);
+  
+  remover.forEach((task, index) => {
+    const remove = document.querySelector('.fa-xmark');
+    console.log(remove)
+    
+    remove.addEventListener('click', (task) => {
+      console.log(task.target.parentNode)
+      const teste = task.target.parentNode;
+
+      teste.remove()
+    })
+  });
+};
+
+removeTarefa();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// limpar.addEventListener('click', (e) => {
+//   console.log('limpar');
+
+//   lista.innerHTML = '';
+// });
