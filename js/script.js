@@ -1,4 +1,4 @@
-import { input, adicionar, lista} from "./dom.js";
+import { input, adicionar, lista, contadorTarefas} from "./dom.js";
 
 const itens = JSON.parse(localStorage.getItem('itens')) || [];
 
@@ -35,3 +35,9 @@ function criaTarefa(input) {
 
   lista.innerHTML += template;
 };
+
+function quantidadeTarefas() {
+  contadorTarefas.innerHTML = 'teste';
+}
+
+
