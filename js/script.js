@@ -25,6 +25,8 @@ adicionar.addEventListener('click', (event) => {
   localStorage.setItem('itens', JSON.stringify(itens));
 
   quantidadeTarefas();
+
+  input.value = '';
 });
 
 function criaTarefa(input) {
@@ -38,7 +40,9 @@ function criaTarefa(input) {
   </div>
   `
 
-  lista.innerHTML += template; 
+  lista.innerHTML += template;
+  
+  removeTarefa();
 };
 
 function quantidadeTarefas() {
@@ -55,25 +59,28 @@ quantidadeTarefas();
 
 function removeTarefa() {
   const remover = document.querySelectorAll('.fa-xmark');
-  console.log(remover);
   
   remover.forEach((task, index) => {
-    const remove = document.querySelector('.fa-xmark');
-    console.log(remove)
     
-    remove.addEventListener('click', (task) => {
-      console.log(task.target.parentNode)
-      const removeElemento = task.target.parentNode;
+    task.addEventListener('click', (task) => {
 
-      removeElemento.remove()
+      itens.splice(index, 1);
+
+      localStorage.setItem('itens', JSON.stringify(itens));
+
+      lista.innerHTML = '';
+
+      itens.forEach(task => {
+        criaTarefa(task.tarefa);
+      });
+
+      quantidadeTarefas();
     })
   });
 };
 
-removeTarefa();
+limpar.addEventListener('click', (e) => {
+  console.log('limpar');
 
-// limpar.addEventListener('click', (e) => {
-//   console.log('limpar');
-
-//   lista.innerHTML = '';
-// });
+  lista.innerHTML = '';
+});
