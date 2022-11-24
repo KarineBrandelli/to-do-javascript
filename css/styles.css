@@ -122,15 +122,6 @@ li,
   font-size: 1.25rem;
 }
 
-.checked-icon {
-  color: hsl(234, 11%, 52%);
-}
-
-.checked-text {
-  color: hsl(234, 11%, 52%);
-  text-decoration: line-through;
-}
-
 .ul-div {
   display: flex;
   justify-content: center;

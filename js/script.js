@@ -1,4 +1,4 @@
-import { input, adicionar, lista, contadorTarefas} from "./dom.js";
+import { input, adicionar, lista, contadorTarefas, tarefaCompletada} from "./dom.js";
 
 const itens = JSON.parse(localStorage.getItem('itens')) || [];
 
