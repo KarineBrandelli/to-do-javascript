@@ -2,11 +2,13 @@ import { input, adicionar, lista, contadorTarefas} from "./dom.js";
 
 const itens = JSON.parse(localStorage.getItem('itens')) || [];
 
-console.log(itens)
-
 itens.forEach(task => {
   criaTarefa(task.tarefa);
 });
+
+itens.forEach(amount => {
+  quantidadeTarefas(amount.quantidade);
+})
 
 adicionar.addEventListener('click', (event) => {
   event.preventDefault();
@@ -20,6 +22,8 @@ adicionar.addEventListener('click', (event) => {
   itens.push(novaTarefa);
 
   localStorage.setItem('itens', JSON.stringify(itens));
+
+  quantidadeTarefas();
 });
 
 function criaTarefa(input) {
@@ -37,7 +41,7 @@ function criaTarefa(input) {
 };
 
 function quantidadeTarefas() {
-  contadorTarefas.innerHTML = 'teste';
-}
+  const quantidade = itens.length;
 
-
+  contadorTarefas.innerHTML = quantidade;
+};
