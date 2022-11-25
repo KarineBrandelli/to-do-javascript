@@ -11,7 +11,8 @@
 ## Preview 🔎
 
 <p align="center">
-  <img src="./assets/.png">
+  <img src="./assets/desktop-light-preview.png" width=47%>
+  <img src="./assets/desktop-dark-preview.png" width=47%>
 <p>
 
 <hr>
