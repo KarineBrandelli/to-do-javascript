@@ -11,6 +11,12 @@
   --color-lists: hsl(236, 33%, 92%);
 }
 
+.dark-mode {
+  --color-background: hsl(235, 21%, 11%);
+  --color-texts: hsl(0, 0%, 98%);
+  --color-lists: hsl(235, 24%, 19%);
+}
+
 body {
   min-height: 100vh;
   background-color: var(--color-background);
@@ -202,10 +208,4 @@ footer {
   footer {
     background-color: hsl(235, 24%, 19%);
   }
-}
-
-.dark-mode {
-  --color-background: hsl(235, 21%, 11%);
-  --color-texts: hsl(0, 0%, 98%);
-  --color-lists: hsl(235, 24%, 19%);
 }
