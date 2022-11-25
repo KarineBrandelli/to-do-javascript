@@ -7,9 +7,16 @@
 
 body {
   min-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(236, 8%, 41%);
 }
 
 .header-img {
+  background: url('../assets/bg-desktop-light.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   max-width: 100%;
   padding: 10rem 0;
 }
@@ -104,6 +111,7 @@ h1 {
 .new-content,
 .todo-list,
 footer {
+  background-color: hsl(236, 33%, 92%);
   border-radius: .5rem;
 }
 
@@ -164,31 +172,11 @@ footer {
   font-size: 1.25rem;
 }
 
-/* PREFERS COLOR SCHEME */
-
-@media (prefers-color-scheme: light) {
-	body {
-		background-color: hsl(0, 0%, 98%);
-    color: hsl(236, 8%, 41%);
-	}
-
-  .header-img {
-    background: url('../assets/bg-desktop-light.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .todo-list,
-  .new-content,
-  footer {
-    background-color: hsl(236, 33%, 92%);
-  }
-
-  .clear:hover {
-    color:hsl(235, 8%, 72%);
-  }
+.clear:hover {
+  color:hsl(235, 8%, 72%);
 }
+
+/* PREFERS COLOR SCHEME */
 
 @media (prefers-color-scheme: dark) {
 	body {
