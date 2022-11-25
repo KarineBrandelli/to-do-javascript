@@ -23,8 +23,18 @@ body {
   color: var(--color-texts);
 }
 
-.header-img {
+.light-mode-img {
   background: url('../assets/bg-desktop-light.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 100%;
+  padding: 10rem 0;
+}
+
+.dark-mode-img {
+  background: url('../assets/bg-desktop-dark.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -196,11 +206,14 @@ footer {
     color: hsl(0, 0%, 98%);
 	}
 
-  .header-img {
+  #header-bg {
     background: url('../assets/bg-desktop-dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  
+    max-width: 100%;
+    padding: 10rem 0;
   }
 
   .todo-list,
