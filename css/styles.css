@@ -5,10 +5,16 @@
   font-family: 'Poppins';
 }
 
+:root {
+  --color-background: hsl(0, 0%, 98%);
+  --color-texts: hsl(236, 8%, 41%);
+  --color-lists: hsl(236, 33%, 92%);
+}
+
 body {
   min-height: 100vh;
-  background-color: hsl(0, 0%, 98%);
-  color: hsl(236, 8%, 41%);
+  background-color: var(--color-background);
+  color: var(--color-texts);
 }
 
 .header-img {
@@ -111,7 +117,7 @@ h1 {
 .new-content,
 .todo-list,
 footer {
-  background-color: hsl(236, 33%, 92%);
+  background-color: var(--color-lists);
   border-radius: .5rem;
 }
 
@@ -196,8 +202,10 @@ footer {
   footer {
     background-color: hsl(235, 24%, 19%);
   }
+}
 
-  .clear:hover {
-    color:hsl(234, 11%, 52%);
-  }
+.dark-mode {
+  --color-background: hsl(235, 21%, 11%);
+  --color-texts: hsl(0, 0%, 98%);
+  --color-lists: hsl(235, 24%, 19%);
 }

@@ -1,7 +1,11 @@
-import { toggle } from "./dom.js";
+function load() {
+  const toggleBtn = document.querySelector('.toggle-switch'); 
 
-const useDark = window.matchMedia("(prefers-color-scheme: dark)");
+  toggleBtn.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark-mode");
+  });
 
-function toggleDarkMode(state) {
-  document.documentElement.classList.toggle("dark-mode", state);
+  console.log('caraca')
 }
+
+window.addEventListener("DOMContentLoaded", load);
