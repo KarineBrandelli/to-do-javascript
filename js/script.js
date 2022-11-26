@@ -13,6 +13,8 @@ itens.forEach(amount => {
 adicionar.addEventListener('click', (event) => {
   event.preventDefault();
 
+  if (input.value.length === 0) return;
+
   criaTarefa(input.value);
 
   let novaTarefa = {
