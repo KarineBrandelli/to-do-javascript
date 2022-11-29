@@ -134,6 +134,7 @@ h1 {
 .todo-list,
 footer {
   background-color: var(--color-lists);
+  color: var(--color-texts);
   border-radius: .5rem;
 }
 
