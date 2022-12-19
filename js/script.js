@@ -8,7 +8,7 @@ itens.forEach(task => {
 
 itens.forEach(amount => {
   quantidadeTarefas(amount.quantidade);
-})
+});
 
 adicionar.addEventListener('click', (event) => {
   event.preventDefault();
@@ -65,7 +65,6 @@ function removeTarefa() {
   remover.forEach((task, index) => {
     
     task.addEventListener('click', (task) => {
-
       itens.splice(index, 1);
 
       localStorage.setItem('itens', JSON.stringify(itens));
@@ -82,7 +81,6 @@ function removeTarefa() {
 };
 
 limpar.addEventListener('click', (e) => {
-
   lista.innerHTML = '';
 
   localStorage.setItem('itens', JSON.stringify([]));
