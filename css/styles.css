@@ -8,6 +8,7 @@
 :root {
   --color-background: hsl(0, 0%, 98%);
   --color-texts: hsl(236, 8%, 41%);
+  --color-title: hsl(0, 0%, 98%);
   --color-lists: hsl(236, 33%, 92%);
 }
 
@@ -47,7 +48,7 @@ body {
   display: flex;
   justify-content: center;
 
-  margin: -15rem 1rem 1rem 1rem;
+  margin: -13rem 1rem 1rem 1rem;
 }
 
 .main-content {
@@ -115,7 +116,7 @@ input:checked ~ .slider::before {
 }
 
 h1 {
-  color: hsl(0, 0%, 98%);
+  color: var(--color-title);
   letter-spacing: 1rem;
   font-size: 2.75rem;
 }
