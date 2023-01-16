@@ -136,6 +136,17 @@ footer {
   padding: 1rem;
 }
 
+.new-item {
+  display: flex;
+  align-items: center;
+}
+
+.todo-task {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .todo-list {
   display: flex;
   flex-direction: column;
@@ -167,19 +178,8 @@ footer {
   cursor: pointer;
 }
 
-.new-item {
-  display: flex;
-  align-items: center;
-}
-
 .fa-plus {
   margin-left: -1.75rem;
-}
-
-.todo-task {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .fa-circle-check {
