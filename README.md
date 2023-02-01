@@ -1,36 +1,28 @@
-<h1 align="center"> To-do list 📃 </h1>
-
-## Descrição ✏️
-
-<p align="justify">
-  A aplicação representa uma lista de tarefas, onde o usuário pode adicionar as tarefas a serem realizadas e remover as tarefas já concluídas. Também conta com um toggle entre light e dark mode, e um prefers-color-scheme, onde a página capta a preferência do usuário, e altera seu tema de acordo.
-</p>
-
-<hr>
-
-## Preview 🔎
+<h1 align="center"> To-do List | JavaScript </h1>
 
 <p align="center">
-  <img src="./assets/desktop-light-preview.png" width=47%>
-  <img src="./assets/desktop-dark-preview.png" width=47%>
-<p>
-
-<hr>
-
-## Tecnologias ⚒️
-
-O projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML
-- CSS
-- JavaScript
-- DOM
-- Git e GitHub
-
-<hr>
-
-## Recursos adicionais 💡
-
-<p align="justify">
-  Além de armazenar as tarefas na localStorage, permitindo o usuário recarregar a página e não perder o conteúdo inserido, ao remover as tarefas a localStorage também é atualizada. Esse projeto permitiu que eu adquirisse um conhecimento em como fazer um toggle para a troca de temas e também como captar a preferência padrão de tema do usuário.
+  Uma aplicação web de uma to-do list desenvolvida com JavaScript.
 </p>
+
+------
+## Como acessar a página?
+
+Você pode acessar a aplicação utilizando um computador, tablet ou celular clicando [nesse]() link.
+
+Se você quiser clonar o repositório em sua máquina, não é necessário fazer nenhum tipo de instalação para sua utilização.
+
+<p align="center">
+  <img alt="App Layout" src="https://user-images.githubusercontent.com/108953489/216106654-c8134ea0-a8be-4e6c-9524-4a43a5750437.gif" width="80%">
+</p>
+
+## Funcionalidades implementadas
+
+Armazenamento das tarefas em localStorage, botão toggle para troca de tema e prefers-color-scheme para captar a preferência de tema do usuário.
+
+## Tecnologias utilizadas
+
+Tecnologias utilizadas e suas documentações:
+
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
